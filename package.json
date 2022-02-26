@@ -19,7 +19,6 @@
   "dependencies": {
     "boxen": "^5.1.2",
     "chalk": "^4.1.2",
-    "chalk-animation": "^1.6.0",
     "cli-table": "^0.3.11",
     "figures": "^3.2.0",
     "log-symbols": "^4.1.0"
