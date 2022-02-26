@@ -1,7 +1,26 @@
 #!/usr/bin/env node
-console.clear();
-console.log(`
-Sanoj Silva
 
-I'm a Tech Enthusiast who always look forward to take on new challenges, learn new things and grow with all possible opportunities. I love working with Web technologies. Over the years I have developed many projects from Landing pages, E-commerce Applications to Information Systems.
+const ca = require("chalk-animation");
+const myEducation = require("./utils/education");
+const myProjects = require("./utils/projects");
+const intro = require("./utils/intro");
+const header = require("./utils/header");
+const social = require("./utils/social");
+
+const sleep = () => new Promise((res) => setTimeout(res, 2000));
+
+const animation = async () => {
+  const position = ca.rainbow("A FULL STACK DEVELOPER");
+  position.start();
+  await sleep();
+};
+
+console.clear();
+
+console.log(`
+${header}
+${intro}
+${myEducation}
+${myProjects}
+${social}
 `);
